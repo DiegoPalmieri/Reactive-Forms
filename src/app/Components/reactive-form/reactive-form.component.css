@@ -1,3 +1,18 @@
-.boton{
-    text-align: center;
+.boton {
+  text-align: center;
+}
+
+.carta {
+  background-color: aliceblue;
+  max-width: 250px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: transparent;
+}
+
+.sexo {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
 }

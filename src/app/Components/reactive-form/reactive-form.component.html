@@ -1,101 +1,46 @@
 <form [formGroup]="Formulario" autocomplete="off">
-    <br />
-    <label for="">Nombre</label>
-    <input type="text" id="" placeholder="" formControlName="" required /><br />
-    <br />
-
-    <label for="">Apellido</label>
-    <input type="text" id="" placeholder="" formControlName="" required />
-    <br />
-    <br />
-
-    <label for="">Email</label>
-    <input type="email" id="" placeholder="  : " formControlName="" required /><br />
-    <br />
-
-    <label for="sexo">Seleccione su sexo: </label><br />
-    <input type="" name="" value="" formControlName="" required />
-    <label for="masculino">Masculino</label> <br />
-    <input type="radio" name="" value="" formControlName="" required />
-    <label for="">Femenino</label> <br /><br />
-
-    <label for="">Seleccione el país</label>
-    <select id="" formControlName="" required>
-        <option value="">Seleccione</option>
-        <option value="CO">Colombia</option>
-        <option value="AR">Argentina</option>
-        <option value="URU">Uruguay</option>
-        <option value="CH">Chile</option>
-        <option value="BO">Bolivia</option>
-    </select><br /><br />
-
-    <div class="boton">
-        <button>Enviar</button>
-    </div>
-</form>
-
-<br /><br /><br /><br />
-
-<!-------------------------------------------------------------------------------------------------------------------------------------------->
-
-<form [formGroup]="Formulario" autocomplete="off">
-    <mat-card>
+    <mat-card class="carta">
         <mat-card-header>
             <mat-card-title>FORMULARIO</mat-card-title>
         </mat-card-header>
 
-        <mat-card-content>
-            <br />
-
+        <mat-card-content class="">
             <mat-form-field for="nombre">
-                <input matInput type="text" placeholder="Ingrese su nombre" formControlName="nombre" />
+                <input matInput type="text" placeholder="Ingrese su nombre" formControlName="nombre" class="" />
             </mat-form-field>
-            <br />
-
             <mat-form-field for="apellido">
-                <input matInput type="text" placeholder="Ingese su apellido" formControlName="apellido" />
+                <input matInput type="text" placeholder="Ingese su apellido" formControlName="apellido" class="" />
             </mat-form-field>
-
-            <br />
 
             <mat-form-field for="email">
-                <input matInput type="email" placeholder="Ingrese su Email" formControlName="email" />
+                <input matInput type="email" placeholder="Ingrese su Email" formControlName="email" class="" />
             </mat-form-field>
-
-            <br />
-
-            <mat-label for="sexo">Seleccione su sexo:
-            </mat-label>
-            <mat-radio-group formControlName="sexo">
-                <mat-radio-button value="masculino" formControlName="sexo">
+            <mat-label for="sexo">Seleccione su sexo: </mat-label>
+            <mat-radio-group formControlName="sexo" style="color: black;" class="sexo">
+                <mat-radio-button value="masculino">
                     Masculino
                 </mat-radio-button>
-
-                <mat-radio-button value="femenino" formControlName="sexo">
+                <mat-radio-button value="femenino">
                     Femenino
                 </mat-radio-button>
             </mat-radio-group>
+            <mat-form-field>
+                <mat-label for="paises">Seleccione el país: </mat-label>
+                <mat-select formControlName="paises" class="">
+                    <mat-option value="">Seleccione</mat-option>
+                    <mat-option value="CO">Colombia</mat-option>
+                    <mat-option value="AR">Argentina</mat-option>
+                    <mat-option value="URU">Uruguay</mat-option>
+                    <mat-option value="CH">Chile</mat-option>
+                    <mat-option value="BO">Bolivia</mat-option>
+                </mat-select>
+            </mat-form-field>
 
-            <br />
 
-            <mat-label for="paises">Seleccione el país:
-            </mat-label>
-            <mat-select formControlName="paises">
-                <mat-option value="">Seleccione</mat-option>
-                <mat-option value="CO">Colombia</mat-option>
-                <mat-option value="AR">Argentina</mat-option>
-                <mat-option value="URU">Uruguay</mat-option>
-                <mat-option value="CH">Chile</mat-option>
-                <mat-option value="BO">Bolivia</mat-option>
-            </mat-select>
-
-            <br />
 
             <div class="boton">
                 <button mat-raised-button (click)="botonEnviar()">Enviar</button>
             </div>
-
-
         </mat-card-content>
     </mat-card>
 </form>
