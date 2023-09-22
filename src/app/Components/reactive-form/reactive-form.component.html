@@ -16,13 +16,9 @@
                 <input matInput type="email" placeholder="Ingrese su Email" formControlName="email" class="" />
             </mat-form-field>
             <mat-label for="sexo">Seleccione su sexo: </mat-label>
-            <mat-radio-group formControlName="sexo" style="color: black;" class="sexo">
-                <mat-radio-button value="masculino">
-                    Masculino
-                </mat-radio-button>
-                <mat-radio-button value="femenino">
-                    Femenino
-                </mat-radio-button>
+            <mat-radio-group formControlName="sexo" class="sexo">
+                <mat-radio-button value="masculino"> Masculino </mat-radio-button>
+                <mat-radio-button value="femenino"> Femenino </mat-radio-button>
             </mat-radio-group>
             <mat-form-field>
                 <mat-label for="paises">Seleccione el país: </mat-label>
@@ -35,8 +31,6 @@
                     <mat-option value="BO">Bolivia</mat-option>
                 </mat-select>
             </mat-form-field>
-
-
 
             <div class="boton">
                 <button mat-raised-button (click)="botonEnviar()">Enviar</button>
